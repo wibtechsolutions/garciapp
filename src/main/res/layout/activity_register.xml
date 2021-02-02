@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c1c1c1"
+    tools:context=".MainActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/activity_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create your account. It's free and only takes a minute"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:layout_marginTop="-1dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:id="@+id/name"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/email"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:id="@+id/mobile"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/password"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:background="#85BB65"
+            android:textColor="#111111"
+            android:textSize="20dp"
+            android:layout_marginTop="40dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already registered? Click here"
+            android:gravity="center"
+            android:id="@+id/txtView"
+            android:textSize="10dp"
+            android:background="#c1c1c1"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:layout_marginTop="-1dp"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

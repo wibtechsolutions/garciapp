@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".dash">
+
+
+
+
+
+
+
+        <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:columnOrderPreserved="false"
+        android:minHeight="1300dp"
+        android:rowCount="6"
+        android:columnCount="2">
+
+            <Button
+                android:id="@+id/info"
+                android:layout_width="68dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="Garci Pro"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="top|left"
+                android:background="@drawable/info"/>
+
+
+                    <Button
+                        android:id="@+id/Agent"
+                        android:layout_width="68dp"
+                        android:layout_height="60dp"
+                        android:text="Agent"
+                        android:gravity="top|left"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:textSize="20sp"
+                        android:textColor="#ffffff"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_gravity="fill"
+                        android:background="@drawable/agent"/>
+
+                    <Button
+                        android:id="@+id/productInstruction"
+                        android:layout_width="68dp"
+                        android:layout_height="60dp"
+                        android:text="Product&#10;Instruction"
+                        android:textSize="20sp"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:textColor="#ffffff"
+                        android:layout_columnWeight="1"
+                        android:gravity="top|left"
+                        android:layout_rowWeight="1"
+                        android:layout_gravity="fill"
+
+                        android:background="@drawable/instruc"/>
+
+                    <Button
+                    android:id="@+id/anoucement"
+                    android:layout_width="68dp"
+                    android:layout_height="60dp"
+                    android:text="Annoucement"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_gravity="fill"
+                    android:gravity="top|left"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/annouce"/>
+
+                    <Button
+                        android:id="@+id/testimony"
+                        android:layout_width="68dp"
+                        android:layout_height="60dp"
+                        android:text="Testimony"
+                        android:textSize="20sp"
+                        android:textColor="#ffffff"
+                        android:gravity="top|left"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:background="@drawable/testi"/>
+
+                    <Button
+                        android:id="@+id/event"
+                        android:layout_width="68dp"
+                        android:layout_height="60dp"
+                        android:text="Event"
+                        android:textSize="20sp"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="fill"
+                        android:gravity="top|left"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:background="@drawable/event"/>
+
+    </GridLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNavigation_id"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        app:menu="@menu/bottom_navigation" />
+
+
+</RelativeLayout>
